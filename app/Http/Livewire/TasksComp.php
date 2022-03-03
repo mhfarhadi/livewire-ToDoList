@@ -12,6 +12,7 @@ class TasksComp extends Component
     public $new_task;
     public $Task_arr;
     public $editId = 0 ;
+    
 
     public function updateTask()
     {

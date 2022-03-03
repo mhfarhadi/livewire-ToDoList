@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\TasksComp;
+use App\Http\Livewire\Index;
+use App\Http\Livewire\Posts;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +15,6 @@ use App\Http\Livewire\TasksComp;
 |
 */
 
+Route::get('/',Index::class);
 Route::get('/tasks/{userId}', TasksComp::class);
+Route::get('/posts', Posts::class);
